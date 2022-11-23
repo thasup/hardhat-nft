@@ -17,5 +17,8 @@ module.exports = {
       },
     },
   },
+  etherscan: {
+    apiKey: fs.readFileSync(".etherscan").toString().trim(),
+  },
   solidity: "0.8.17",
 };
